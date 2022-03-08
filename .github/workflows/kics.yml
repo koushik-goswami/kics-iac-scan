@@ -23,9 +23,9 @@ jobs:
       - name: run KICS Scan
         uses: Checkmarx/kics-github-action@v1.4
         with:
-          path: './deployments/K8S'
+          path: './deployments/terraform'
           output_path: results-dir
-          platform_type: kubernetes
+          platform_type: terraform
           output_formats: 'json,sarif,html'
           fail_on: high
           enable_comments: true
